@@ -6,5 +6,5 @@ countHi("xhixhix") → 2
 countHi("hi") → 1
  */
 
-public class CountHi {
+public class CountHiRecursion {
 }

@@ -6,5 +6,5 @@ sameEnds("xx") → "x"
 sameEnds("xxx") → "x"
  */
 
-public class SameEnds {
+public class SameEndsString {
 }

@@ -6,5 +6,5 @@ sumDigits("aa11b33") → 8
 sumDigits("Chocolate") → 0
  */
 
-public class SumDigits {
+public class SumDigitsString {
 }
