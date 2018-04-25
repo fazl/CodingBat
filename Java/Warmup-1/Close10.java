@@ -8,14 +8,17 @@ close10(13, 7) → 0
 
 public class Close10 {
 
+    // WRITE YOUR CODE IN THIS METHOD
     static int close10(int i1, int i2){
         return 0; // Remove this line and add your code
     }
 
+
+    // DO NOT MODIFY THIS METHOD
     public static void main(String[] args) {
-        Verify.check( 8 == close10(8,13));
-        Verify.check( 8 == close10(13,8));
-        Verify.check( 0 == close10(13,7));
+        Verify.check( close10(8,13) == 8 );
+        Verify.check( close10(13,8) == 8 );
+        Verify.check( close10(13,7) == 0 );
         System.out.println("Close10 tests OK");
     }
 }

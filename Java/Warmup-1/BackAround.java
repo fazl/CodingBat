@@ -10,16 +10,19 @@ backAround("a") → "aaa"
 public class BackAround {
 
     static String backAround(String s){
+        if(s.length() == 0){
+            return "";
+        }
+
         char last = s.charAt(s.length()-1);
 
         return last+s+last;  //Remove this line and add your code
     }
 
     public static void main(String[] args) {
-        System.out.println("Hi");
-        Verify.check("tcatt".equals( backAround("cat") ));
-        Verify.check("oHelloo".equals( backAround("Hello") ));
-        Verify.check("aaa".equals( backAround("a") ));
+        Verify.checkEquals( backAround("cat"),   "tcatt" );
+        Verify.checkEquals( backAround("Hello"), "oHelloo" );
+        Verify.checkEquals( backAround("a"),     "aaa");
         System.out.println("BackAround tests OK");
     }
 }
